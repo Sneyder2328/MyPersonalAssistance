@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">My Personal Assistance</string>
+  <string name="action_settings">Settings</string>
+  <string name="language_no_supported">This language is not supported</string>
+  <string name="welcome">Hello, I\'m ready to listen!</string>
+  <string name="any_match">We could not recognize anything, try again</string>
+  <string name="opening_browser">Opening the browser</string>
+  <string name="record_audio_permission_denied">The record audio permission was denied</string>
+  <string name="time">The time now is %s</string>
+  <string name="pitch_rate">Pitch Rate</string>
+  <string name="speed_rate">Speed Rate</string>
+  <string name="date">Today is %s</string>
+
+</resources>

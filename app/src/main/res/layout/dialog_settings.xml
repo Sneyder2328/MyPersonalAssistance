@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="#000"
+      android:text="@string/pitch_rate"
+      android:layout_marginTop="10dp"/>
+
+  <SeekBar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/seekBarPitch"
+      android:max="20"
+      android:progress="10"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"
+      android:textColor="#000"
+      android:text="@string/speed_rate"/>
+
+  <SeekBar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/seekBarRate"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="20dp"
+      android:max="20"
+      android:progress="10"/>
+</LinearLayout>

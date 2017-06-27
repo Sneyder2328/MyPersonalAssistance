@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Asistente Personal</string>
+  <string name="action_settings">Configuración</string>
+  <string name="language_no_supported">Este lenguaje no es soportado</string>
+  <string name="welcome">Hola, estoy listo para escuchar</string>
+  <string name="any_match">No pudimos reconocer nada, intenta de nuevo</string>
+  <string name="opening_browser">Abriendo el navegador</string>
+  <string name="record_audio_permission_denied">Se ha negado el permiso para grabar audio</string>
+  <string name="time">Son las %s</string>
+  <string name="pitch_rate">Pitch Rate</string>
+  <string name="speed_rate">Speed Rate</string>
+  <string name="date">Hoy es %s</string>
+</resources>

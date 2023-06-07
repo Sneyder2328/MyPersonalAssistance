@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), RecognitionListener {
     private var listening: Boolean = false
     private var mLanguage: Language = Language.ENGLISH_US
     val rotateAnimation: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.rotate) }
-
+    
     enum class Language(val locale: Locale, val language: String){
         ENGLISH_US(Locale.US, "en"),
         SPANISH(Locale("es"), "es")
@@ -240,7 +240,7 @@ class MainActivity : AppCompatActivity(), RecognitionListener {
     }
 
 
-    fun executeCommand(command: String){
+    private fun executeCommand(command: String){
         debug("command $command")
         when {
             command.isOpenBrowser() -> {
@@ -275,31 +275,31 @@ class MainActivity : AppCompatActivity(), RecognitionListener {
     val spanish = arrayOf("spanish", "español")
     val english = arrayOf("english", "ingles")
 
-    fun String.isOpenBrowser(): Boolean{
+    private fun String.isOpenBrowser(): Boolean{
         return (containsOneOfThese(*openCommands) && containsOneOfThese(*browserCommands))
     }
 
-    fun String.isOpenUrl(): Boolean{
+    private fun String.isOpenUrl(): Boolean{
         return ((containsOneOfThese(*openCommands) || containsOneOfThese(*goCommands)) && containsOneOfThese(*domains))
     }
 
-    fun String.isWhatTime(): Boolean{
+    private fun String.isWhatTime(): Boolean{
         return containsOneOfThese("time", "hora")
     }
 
-    fun String.isWhatDate(): Boolean{
+    private fun String.isWhatDate(): Boolean{
         return containsOneOfThese("date", "fecha")
     }
 
-    fun String.isChangeToEnglish(): Boolean{
+    private fun String.isChangeToEnglish(): Boolean{
         return containsOneOfThese(*language) && containsOneOfThese(*english)
     }
 
-    fun String.isChangeToSpanish(): Boolean{
+    private fun String.isChangeToSpanish(): Boolean{
         return containsOneOfThese(*language) && containsOneOfThese(*spanish)
     }
 
-    fun String.containsOneOfThese(vararg options: String): Boolean{
+    private fun String.containsOneOfThese(vararg options: String): Boolean{
         options.forEach {
             if(this.contains(it)) return true
         }
